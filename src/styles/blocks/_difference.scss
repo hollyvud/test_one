@@ -11,7 +11,15 @@
         justify-content: center;
         text-align: center;
         row-gap: rem(40);
+
+        @include tablet{
+            padding: rem(80);
+        }
+        @include mobile{
+            padding: rem(80) 0;
+        }
     }
+
 
     &_button{
         margin: 0 auto;
