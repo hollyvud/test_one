@@ -8,15 +8,22 @@ import desktopImg from './images/desck.png'
 import tabletImg from './images/tablet.png'
 import mobileImg from './images/mobile.png'
 
+import logoOne from './images/logo-1.png'
+import logoTwo from './images/logo-2.png'
+import logoThree from './images/logo-3.png'
+import logoFour from './images/logo-4.png'
+import logoFive from './images/logo-5.png'
+import logoSix from './images/logo-6.png'
+
 function App() {
 
   const logos = [
-    {id:1, src: 'http://localhost:5173/src/images/logo-1.png', alt: 'Лого'},
-    {id:2, src: 'http://localhost:5173/src/images/logo-2.png', alt: 'Лого'},
-    {id: 3, src: 'http://localhost:5173/src/images/logo-3.png', alt: 'Лого'},
-    {id: 4, src: 'http://localhost:5173/src/images/logo-4.png', alt: 'Лого'},
-    {id: 5, src: 'http://localhost:5173/src/images/logo-5.png', alt: 'Лого'},
-    {id: 6, src: 'http://localhost:5173/src/images/logo-6.png', alt: 'Лого'},
+    {id:1, src: logoOne, alt: 'Лого'},
+    {id:2, src: logoTwo, alt: 'Лого'},
+    {id: 3, src: logoThree, alt: 'Лого'},
+    {id: 4, src: logoFour, alt: 'Лого'},
+    {id: 5, src: logoFive, alt: 'Лого'},
+    {id: 6, src: logoSix, alt: 'Лого'},
   ]
 
   return (
