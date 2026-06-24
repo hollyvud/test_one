@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.button-more{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(14) rem(22);
+    font-size: rem(14);
+    color: var(--color-back);
+    white-space: nowrap;
+    background-color: var(--color-accent-4);
+    border-radius: rem(100);
+
+    line-height: 140%;
+    letter-spacing: -0.03em;
+
+    height: rem(48);
+    width: rem(127);
+
+    @include hover{
+        color: var(--color-accent-3);
+        background-color: var(--color-silver);
+    }
+}

@@ -1,0 +1,89 @@
+@use '../helpers' as *;
+
+.technology{
+    
+    &_body{
+       display: flex;
+       flex-direction: column;
+       row-gap: rem(40);
+
+       padding-top: rem(60);
+       padding-bottom: rem(80);
+
+       width: rem(590);
+
+       @include laptop{
+        width: 100%;
+       }
+    }
+
+    &_heading{
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(40);
+    }
+    &_h2{
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 90%;
+        letter-spacing: -0.03em;
+    }
+    &_subtitle{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+    }
+
+    &_content{
+        display: flex;
+        flex-direction: column;
+    }
+    &_item{
+        border-top: 1px solid var(--color-silver);
+
+        padding: rem(20) rem(80) rem(20) 0;
+
+        display: flex;
+        flex-direction: row;
+        column-gap: rem(30);
+
+        @include mobile{
+            padding: rem(20) 0 rem(20) 0;
+        }
+    }
+    &_number{
+        font-weight: 700;
+        font-size: rem(15);
+        line-height: 140%;
+        letter-spacing: -0.01em;
+    }
+    &_text{
+        font-weight: 400;
+        font-size: rem(15);
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        color: var(--color-accent-black);
+    }
+
+    &_button{
+        background-color: var(--color-accent-2);
+        color: var(--color-accent-black);
+        font-weight: 700;
+        
+    }
+
+    &_image{
+        border-radius: var(--photo-border-radius);
+        object-fit: cover;
+        width: rem(590);
+        height: rem(620);
+
+        @include laptop{
+        width: 100%;
+       }
+       @include mobile{
+        width: rem(311);
+       }
+    }
+}

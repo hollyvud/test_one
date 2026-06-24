@@ -31,4 +31,13 @@
             height: rem(600);
         }
     }
+
+    &_technology{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: rem(20);
+
+        justify-content: center;
+    }
 }
