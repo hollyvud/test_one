@@ -1,0 +1,85 @@
+@use '../helpers' as *;
+
+.difference{
+
+    &_heading{
+        padding: rem(80) rem(240);
+        border-top: 1px solid var(--color-accent-6);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        row-gap: rem(40);
+    }
+
+    &_button{
+        margin: 0 auto;
+    }
+
+
+
+    &_body{
+        display: grid;
+        grid-template-columns: repeat(3, rem(400));
+
+        overflow-y: auto;
+
+        @include tablet{
+            grid-template-columns: repeat(3, rem(238));
+        }
+        @include mobile{
+            grid-template-columns: repeat(3, rem(200));
+        }
+    }
+
+    &_list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_cell{
+        border-bottom: 1px solid var(--color-accent-6);
+        padding: rem(40) rem(30);
+        text-align: center;
+    }
+    &_item{
+        border-bottom: 0.50px solid var(--color-silver);
+        border-left: 0.50px solid var(--color-silver);
+
+        padding: rem(32) 0 rem(32) rem(30);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: rem(8);
+    }
+
+    &_logo{
+        font-weight: 500;
+        font-size: rem(25);
+        line-height: 120%;
+        letter-spacing: -0.08em;
+        color: var(--color-accent-black);
+    }
+    &_logo-our{
+        font-weight: 500;
+        font-size: rem(22);
+        line-height: 120%;
+        letter-spacing: -0.08em;
+        color: var(--color-text-parag);
+    }
+
+    &_icon{
+        height: rem(14);
+        width: rem(14);
+    }
+    &_text{
+        font-family: var(--font-family-section);
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+}

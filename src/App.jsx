@@ -3,6 +3,7 @@ import './styles/main.scss'
 import './App.css'
 import Header from './components/header.jsx'
 import Benefits from './components/benefits.jsx'
+import Specifications from './components/specifications.jsx'
 
 import desktopImg from './images/desck.png'
 import tabletImg from './images/tablet.png'
@@ -53,6 +54,7 @@ function App() {
           </div>
         </section>
         <Benefits/>
+        <Specifications/>
       </main>
     </>
       
