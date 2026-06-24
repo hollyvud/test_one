@@ -1,0 +1,34 @@
+@use '../helpers' as *;
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+
+    &_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        overflow: hidden;
+    }
+
+    &_advantages{
+        padding-bottom: rem(60);
+    }
+
+
+    &_image{
+        border-radius: var(--photo-border-radius);
+        object-fit: cover;
+
+        width: 100%;
+        height: rem(620);
+
+        @include laptop{
+            height: rem(600);
+        }
+        @include mobile{
+            height: rem(600);
+        }
+    }
+}

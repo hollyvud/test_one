@@ -1,0 +1,113 @@
+@use '../helpers' as *;
+
+.header{
+    position: relative;
+    z-index: 3;
+    &_body{
+        padding-block: rem(26);
+
+        @include mobile{
+            padding-block: rem(20);
+            position: fixed;
+            top:0;
+            right: 0;
+            left: 0;
+
+            background-color: var(--color-back);
+        }
+
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+        &_overlay{
+        @include mobile-above{
+            display: contents;
+        }
+
+        @include mobile{
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            row-gap: 3rem;
+            padding: 1rem;
+            background-color: inherit;
+            transition-duration: var(--transition-duration);
+
+            &:not(.is-active){
+                @include hide;
+
+
+                translate: 100%;
+            }
+        }
+    }
+
+
+    &_logo{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: -0.05em;
+        line-height: 120%;
+    }
+
+    &_menu{
+        position: fixed;
+        z-index: 1000;
+        top: rem(16);
+        padding: rem(18) 0;
+
+        left: 50%;
+        transform: translate(-50%);
+
+        backdrop-filter: blur(30px);
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: rem(100);
+
+        @include mobile{
+            position: relative;
+            border-radius: 0;
+            background: var(--color-back);
+        }
+
+        &-list{
+            display: flex;
+            justify-content: space-around;
+
+            width: rem(399);
+
+            @include mobile{
+                flex-direction: column;
+            }
+        }
+
+        &-link{
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: rem(14);
+            line-height: 140%;
+            letter-spacing: -0.03em;
+            text-align: center;
+
+            @include mobile{
+                padding: rem(30) 0;
+                width: 100%;
+                border-top: 1px solid var(--color-silver);
+            }
+        }
+    }
+    &__burger-button{
+        @include mobile{
+            width: 100%;
+            max-width: rem(300);
+            align-self: center;
+        }
+    }
+
+
+}

@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.trust{
+    position: relative;
+    z-index: 2;
+    background-color: var(--color-back);
+
+
+    &_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: rem(50);
+        padding-bottom: rem(50);
+        row-gap: rem(30);
+    }
+
+    &_clients{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: rem(40);
+        flex-wrap: wrap;
+    }
+
+    &_item{
+        padding: rem(20);
+
+    }
+}

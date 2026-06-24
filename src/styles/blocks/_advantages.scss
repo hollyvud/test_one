@@ -1,0 +1,74 @@
+@use '../helpers' as *;
+
+.advantages{
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(50);
+
+    &_heading{
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(50);
+        justify-content: space-between;
+
+        @include mobile{
+            row-gap: rem(30);
+        }
+    }
+
+
+
+
+
+
+
+    &_body{
+        padding-top: rem(40);
+    }
+
+    &_list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap:rem(20);
+        column-gap: rem(20);
+    }
+
+    &_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        border-top:solid 1px var(--color-silver);
+
+        padding: rem(40) rem(20) rem(40) 0;
+
+        row-gap: rem(24);
+
+        flex: 1 1 rem(250);
+
+    }
+
+    &_icon{
+        width: rem(24);
+        height: rem(24);
+    }
+
+    &_text{
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+    }
+    &_h3{
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: 100%;
+        letter-spacing: -0.03em;
+    }
+    &_parag{
+        font-weight: 400;
+        font-size: rem(15);
+        line-height: 140%;
+        letter-spacing: -0.01em;
+    }
+}

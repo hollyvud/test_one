@@ -1,0 +1,10 @@
+@use '../helpers' as *;
+
+.subtitle{
+    font-family: var(--font-family);
+    color: var(--color-text-parag);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+}

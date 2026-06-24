@@ -1,0 +1,32 @@
+@use '../helpers' as *;
+
+.head{
+    position: relative;
+    z-index: 1;
+    &_body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: rem(240);
+    }
+
+    &_title{
+        text-align: center;
+    }
+
+    &_back {
+        background-color: var(--color-accent-3);
+        height: rem(362);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: rem(30);
+
+        @include tablet{
+            align-items: end;
+        }
+    }
+}
