@@ -10,11 +10,8 @@
        padding-top: rem(60);
        padding-bottom: rem(80);
 
-       width: rem(590);
-
-       @include laptop{
-        width: 100%;
-       }
+        flex-grow: 1;
+        flex-basis: 550px;
     }
 
     &_heading{
@@ -73,17 +70,14 @@
         
     }
 
+    &_image-container{
+        flex: 1 1 50%;
+    }
+
     &_image{
         border-radius: var(--photo-border-radius);
         object-fit: cover;
-        width: rem(590);
-        height: rem(620);
-
-        @include laptop{
         width: 100%;
-       }
-       @include mobile{
-        width: rem(311);
-       }
+        height: 100%;
     }
 }

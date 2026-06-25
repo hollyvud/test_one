@@ -69,7 +69,9 @@ function Benefits() {
                         </div>
                         <a href="" className="technology_button button-dis">Discover More</a>
                     </div>
-                    <img src={technologyImg} alt="" className="technology_image" />
+                    <div className="technology_image-container">
+                        <img src={technologyImg} alt="" className="technology_image" />
+                    </div>
                 </div>
             </div>
         </div>

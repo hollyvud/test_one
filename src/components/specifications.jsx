@@ -3,6 +3,8 @@ import { useState } from 'react'
 import check from '../icons/Check.svg'
 import close from '../icons/Close.svg'
 
+import specsCitatImg from '../images/specs.jpg'
+
 
 function Specifications() {
 
@@ -111,7 +113,20 @@ function Specifications() {
                 </div>
             </div>
             <div className="specs_second content">
-                
+                <div className="specs_citation citation">
+                    <div className="citation_image-container">
+                        <img src={specsCitatImg} alt="" className="citation_image" />
+                    </div>
+                    <div className="citation_body">
+                        <div className="citation_quote-container">
+                            <p className="citation_quote">“I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it.”</p>
+                        </div>
+                        <div className="citation_author-container">
+                            <p className="citation_author subtitle">John Smith</p>
+                            <p className="citation_date">Head of Data</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
