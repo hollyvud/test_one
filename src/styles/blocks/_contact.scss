@@ -1,0 +1,29 @@
+@use '../helpers' as *;
+
+.contact{
+    display: flex;
+
+    &_content{
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(40);
+        align-items: center;
+
+        padding-top: rem(120);
+
+        border-top: rem(0.50) solid var(--color-silver);
+    }
+
+    &_text{
+        text-align: center;
+    }
+
+    &_button-body{
+        width: 100%;
+    }
+    &_button{
+        width: 100%;
+        justify-content: center;
+        column-gap: rem(2);
+    }
+}

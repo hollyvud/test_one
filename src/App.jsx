@@ -5,6 +5,8 @@ import Header from './components/header.jsx'
 import Benefits from './components/benefits.jsx'
 import Specifications from './components/specifications.jsx'
 import HowTo from './components/how-to.jsx'
+import Contact from './components/contact.jsx'
+import Footer from './components/footer.jsx'
 
 import desktopImg from './images/desck.png'
 import tabletImg from './images/tablet.png'
@@ -57,7 +59,9 @@ function App() {
         <Benefits/>
         <Specifications/>
         <HowTo/>
+        <Contact/>
       </main>
+      <Footer/>
     </>
       
   )
