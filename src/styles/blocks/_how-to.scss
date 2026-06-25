@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.how-to{
+    &_body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_map{
+        display: flex;
+        flex-direction: column;
+
+        row-gap: rem(80);
+
+        padding-top: rem(80);
+
+        border-top: 1px solid var(--color-silver);
+    }
+
+    &_image-container{
+        padding-bottom: rem(40);
+    }
+    &_image{
+        border-radius: var(--photo-border-radius);
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: rem(664);
+    }
+    
+}

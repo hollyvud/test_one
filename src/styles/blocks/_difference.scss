@@ -31,7 +31,7 @@
         display: grid;
         grid-template-columns: repeat(3, rem(400));
 
-        overflow-y: auto;
+        overflow-x: auto;
 
         @include tablet{
             grid-template-columns: repeat(3, rem(238));
@@ -55,12 +55,14 @@
         border-bottom: rem(0.50) solid var(--color-silver);
         border-left: rem(0.50) solid var(--color-silver);
 
-        padding: rem(32) 0 rem(32) rem(30);
+        padding: rem(32) rem(10) rem(32) rem(30);
 
         display: flex;
         flex-direction: row;
         align-items: center;
         column-gap: rem(8);
+
+        width: max-content;
 
     }
 

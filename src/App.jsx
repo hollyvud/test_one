@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/header.jsx'
 import Benefits from './components/benefits.jsx'
 import Specifications from './components/specifications.jsx'
+import HowTo from './components/how-to.jsx'
 
 import desktopImg from './images/desck.png'
 import tabletImg from './images/tablet.png'
@@ -55,6 +56,7 @@ function App() {
         </section>
         <Benefits/>
         <Specifications/>
+        <HowTo/>
       </main>
     </>
       
