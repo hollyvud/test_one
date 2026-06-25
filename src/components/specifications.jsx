@@ -16,7 +16,7 @@ function Specifications() {
             <div className="specs_main content">
                 <div className="specs_difference difference">
                     <div className="difference_heading">
-                        <span className="difference_title">Specs</span>
+                        <span id="specs" className="difference_title">Specs</span>
                         <h2 className="difference_h2">Why Choose Area?</h2>
                         <p className="difference_subtitle subtitle">You need a solution that keeps up. That’s why we developed Area. A developer-friendly approach to streamline your business. </p>
                         <a href="" className="difference_button button-dis">Discover More</a>

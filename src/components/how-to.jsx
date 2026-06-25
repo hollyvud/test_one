@@ -16,7 +16,7 @@ function HowTo() {
             <div className="how-to_main content">
                 <div className="how-to_map map">
                     <div className="map_head">
-                        <h2 className="map_h2">Map Your Success</h2>
+                        <h2 id="map" className="map_h2">Map Your Success</h2>
                         <a href="" className="map_button button-dis">Discover More</a>
                     </div>
                     <div className="map_body">

@@ -17,16 +17,16 @@ function Header() {
             <nav className="header_menu">
               <ul className='header_menu-list'>
                 <li className='header_menu-item'>
-                  <a href="/" className="header_menu-link">Benefits</a>
+                  <a href="#benefits" className="header_menu-link">Benefits</a>
                 </li>
                 <li className='header_menu-item'>
-                  <a href="/" className="header_menu-link">Specifications</a>
+                  <a href="#specs" className="header_menu-link">Specifications</a>
                 </li>
                 <li className='header_menu-item'>
-                  <a href="/" className="header_menu-link">How-to</a>
+                  <a href="#map" className="header_menu-link">How-to</a>
                 </li>
                 <li className='header_menu-item'>
-                  <a href="/" className="header_menu-link">Contact Us</a>
+                  <a href="#contact" className="header_menu-link">Contact Us</a>
                 </li>
               </ul>
             </nav>

@@ -8,7 +8,7 @@ function Contact() {
         <div className="contact_body container">
             <div className="contact_content content">
                 <div className="contact_heading">
-                    <h2 className="contact_h2">Connect with us</h2>
+                    <h2 id="contact" className="contact_h2">Connect with us</h2>
                 </div>
                 <div className="contact_text">
                     <p className="contact_subtitle subtitle">Schedule a quick call to learn how Area can turn your regional data into a powerful advantage.</p>

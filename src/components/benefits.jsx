@@ -32,7 +32,7 @@ function Benefits() {
             <div className="benefits_main content">
                 <div className="benefits_advantages advantages">
                     <div className="advantages_heading">
-                        <span className="advantages_title">Benefits</span>
+                        <span id="benefits" className="advantages_title">Benefits</span>
                         <h2 className="advantages_h2">We’ve cracked the code.</h2>
                         <p className="advantages_subtitle subtitle">Area provides real insights, without the data overload.</p>
                     </div>

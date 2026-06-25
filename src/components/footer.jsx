@@ -11,13 +11,13 @@ function Footer() {
                 <div className="footer_menu">
                     <ul className="footer_menu-list">
                         <li className="footer_menu-item">
-                            <a href="" className="footer_menu-link">Benefits</a>
+                            <a href="#benefits" className="footer_menu-link">Benefits</a>
                         </li>
                         <li className="footer_menu-item">
-                            <a href="" className="footer_menu-link">Specifications</a>
+                            <a href="#specs" className="footer_menu-link">Specifications</a>
                         </li>
                         <li className="footer_menu-item">
-                            <a href="" className="footer_menu-link">How-to</a>
+                            <a href="#map" className="footer_menu-link">How-to</a>
                         </li>
                     </ul>
                 </div>
